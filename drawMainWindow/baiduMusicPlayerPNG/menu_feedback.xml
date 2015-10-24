@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<dialog pos="0,0,=182,=144" app="0" movable="0" double-layer="1" snap="0" visible="0" skin="menu_shadow">
-  <div pos="7,7,-7,-7" skin="common_listctrl_header_color">
-    <button id="105008" pos="0,0,-0,=32" text-pos="22,0,-0,-0" skin="menu_listctrl_row_color" text="@setting_official_website" text-skin="song_list_content"/>
-    <button id="105009" pos="0,32,-0,=32" text-pos="22,0,-0,-0" skin="menu_listctrl_row_color" text="@setting_tieba_website" text-skin="song_list_content"/>
-    <button id="105010" pos="0,64,-0,=32" text-pos="22,0,-0,-0" skin="menu_listctrl_row_color" text="@setting_test_website" text-skin="song_list_content"/>
-    <button id="105011" pos="0,96,-0,=32" text-pos="22,0,-0,-0" skin="menu_listctrl_row_color" text="@setting_about" text-skin="song_list_content"/>
-  </div>
-</dialog>

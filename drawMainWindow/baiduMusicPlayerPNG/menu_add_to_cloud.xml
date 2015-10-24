@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<popup>
-  <menu text="我的收藏"></menu>
-  <separator/>
-  <menu text="新建"/>
-    
-</popup>
