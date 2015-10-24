@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<div skin="setting_page_bk" pos="0, 0, -0, -0">
+
+  <static pos="18,22,122,=20" text="@audio_device_setting_topic" text-skin="content_title" adapt-text="1"/>
+  <div pos="0, 0, -0, -0">
+    <static pos="18, 53, =55, =20" text-skin="default" text="@audio_device_setting_device"></static>
+    <combobox id ="31401" pos="77, 49, -32, =30">
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=28" text-skin="default"></static>
+      <static pos="0,0,-0,=30" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,30,-0,106" visible="0">
+        <listctrl id="31402" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" drop-inner="3" drop-file="1" multi-select="0" max-height="105">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>
+    </combobox>
+
+    <static pos="18, 93, =55, =20" text-skin="default" text="@audio_device_setting_output_format"></static>
+    <combobox id ="31403" pos="77, 89, =100, =30">
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=28" text-skin="default"></static>
+      <static pos="0,0,-0,=30" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,30,-0,106" visible="0">
+        <listctrl id="31404" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" drop-inner="3" drop-file="1" multi-select="0" max-height="105">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>
+    </combobox>
+
+    <listctrl id="31405" pos="18,130,-32,=174" skin="common_ctrl_frame">
+      <scroll pos="-11, 23, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+        <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+          <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+        </div>
+      </scroll>
+      <list-head pos="1,1,-1,=22">
+        <list-col pos="0,0,=160,-0" skin="common_listctrl_head_have_line_bg" text-skin="default" text="@audio_device_setting_list_key" text-pos="10,0,-0,-0"></list-col>
+        <list-col pos="0,0,=300,-0" skin="common_listctrl_head_bg" text-skin="default" text="@audio_device_setting_list_value" text-pos="7,0,-0,-0"></list-col>
+      </list-head>
+      <rowbody pos="1,23,-1,-1" multi-select="0">
+        <row mark="template" width="full" height="25" skin="common_listctrl_row_color">
+          <list-item pos="0,0,=159,-0" text-skin="default" text-pos="10,0,-0,-0">
+            <wnd pos="-1,0,-0,-0" skin="common_listctrl_item_line_color"/>
+            <wnd pos="0,-2,-0,-1" skin="common_listctrl_item_line_color"/>
+          </list-item>
+          <list-item pos="0,0,=301,-0" text-skin="default" text-pos="7,0,-0,-0">
+            <wnd pos="-1,0,-0,-0" skin="common_listctrl_item_line_color"/>
+            <wnd pos="0,-2,-0,-1" skin="common_listctrl_item_line_color"/>
+          </list-item>
+        </row>
+      </rowbody>
+    </listctrl>
+
+    <static pos="18, 315, -32, =30" text-skin="multi_default_gray" text="@audio_device_setting_prompt"></static>
+    
+  </div>
+
+</div>

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>baiduMusicPlayerPNG/default_lyric_artist_pic.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix2">
+        <file>radio_playing_animate_bg.png</file>
+        <file>song_list_prompt_tips_error.png</file>
+        <file>song_list_prompt_tips_success.png</file>
+        <file>update_flag_ok.png</file>
+        <file>update_has_new_version.png</file>
+    </qresource>
+</RCC>

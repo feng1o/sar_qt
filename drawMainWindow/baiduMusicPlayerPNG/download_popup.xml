@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="|-260, |-259, =520, =518" app="0" double-layer="1" movable="1" visible="0" skin="main_shadow">
+
+  <div pos="30,30,-30,-30">
+    <div pos="0, 0, -0, 38" skin="common_window_title_cover">
+      <button id="161002" skin="btn_download_close" pos="-32,0,=32,=35" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <static id="161003" pos="10, 0, -50, -0" text="@download_song" text-skin="default"/>
+    </div>
+
+    <div pos="0,38,-0,-0" skin="common_white_color">
+      <realctrl id="161001" pos="0, 0, -0, -0" visible="1" />
+    </div>
+  </div>
+
+</dialog>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="|-255, |-275, |254, |275" app="0" double-layer="1" movable="1" visible="0" frame-skin="common_dialog_frame" skin-pos="1,1,-1,-1" skin="main_bg" managed-skin="1">
+  <div pos="1, 1, -1, -1">
+    
+    <!-- caption -->
+    <div pos="0, 0, -0, 30" skin="common_window_title_cover">
+      <static id="61201" pos="10, 0, -30, -0" text="@lyric_upload_title" text-skin="wnd_title"></static>
+      <button id="61202" skin="btn_close" pos="-23,|-9,=18,=18" tips="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+
+    <!-- browser -->
+    <div pos="0, 30, -0, -0" skin="common_dialog_content_bg">
+      <div pos="0, 0, -0, -0" skin="common_window_content_cover">
+
+        <div pos="0, 0, -0, -0">
+          <realctrl id="61203" pos="0, 0, -0, -0" visible="1"/>
+        </div>
+        
+      </div>      
+    </div>   
+    
+  </div>
+</dialog>

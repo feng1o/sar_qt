@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<div skin="setting_page_bk" pos="0, 0, -0, -0">
+  <static pos="12, 12, 114, 30" text="@global_lyric_setting_topic" text-skin="content_title" adapt-text="1"/>
+
+  <div pos="20, 30, -20, -10">    
+    <button id="61502" pos="0,14,=150,33" skin="common_button_bg" text="@global_lyric_setting_to_download_page" text-skin="default_button"></button>
+  </div>
+
+</div>

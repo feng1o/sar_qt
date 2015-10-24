@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dialog pos="|-170, |-17, |170, |17" app="0" double-layer="1" movable="1" visible="0">
+  <!--工具栏-->
+  <div id="61401" pos="1, 1, -1, -1">
+    <button id="61403" skin="lyric_desk_toolbar_btn_prev" pos="8,0,=28,=32" tips="@prev_song" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61404" skin="lyric_desk_toolbar_btn_play" pos="42,0,=28,=32" tips="@play" visible="0" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61405" skin="lyric_desk_toolbar_btn_pause" pos="42,0,=28,=32" tips="@pause" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61406" skin="lyric_desk_toolbar_btn_next" pos="77,0,=28,=32" tips="@next_song" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61421" skin="lyric_desk_toolbar_btn_behind" pos="111,0,=28,=32" tips="@lyric_adjust_behind" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61422" skin="lyric_desk_toolbar_btn_front" pos="143,0,=28,=32" tips="@lyric_adjust_front" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61423" skin="lyric_desk_toolbar_btn_search" pos="175,0,=28,=32" tips="@desklyric_tip_search" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61410" skin="lyric_desk_toolbar_btn_profile" pos="210,0,=28,=32" tips="@desklyric_tip_profile" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61411" skin="lyric_desk_toolbar_btn_karaoke" pos="244,0,=28,=32" tips="@desklyric_tip_notkaraoke" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61412" skin="lyric_desk_toolbar_btn_not_karaoke" pos="244,0,=28,=32" tips="@desklyric_tip_karaoke" visible="0" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61402" skin="lyric_desk_toolbar_btn_setting" pos="277,0,=28,=32" tips="@desklyric_tip_setting" mouse-enter-animate="common_mouse_enter_gradient"/>
+    <button id="61420" skin="lyric_desk_toolbar_btn_close" pos="-33,0,=28,=32" tips="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+  </div>
+
+  <image-wnd id="61424" pos="0,0,-0,-0" switch-animate="artist_pic_animate" hv-warpmode="fill" single-animate="1"/>
+  
+</dialog>

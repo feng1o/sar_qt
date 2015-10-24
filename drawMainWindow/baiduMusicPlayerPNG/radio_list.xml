@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<div pos="0,0,-0,-0">
+
+  <listctrl id="13400" pos="0,0,-0,-0" >
+
+    <div id="13401" pos="0,,-0,=30" visible="0">
+      <button id="13402" pos="|-78,|-9,=155,=18" skin="btn_radio_add"/> 
+    </div>
+    
+    <div pos="0,0,-0, -0" mark="empty" skin="empty_radio_list">
+      <button id="13403" pos="|-41,130,=82,=29" skin="empty_btn_radio_add"/>
+    </div>
+
+    <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+      <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+        <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+      </div>
+    </scroll>
+
+    <rowbody pos="0,0,-0,-0" multi-select="0" drag="1" drop-inner="2" key-up="1" key-down="1" bottom-space="30" quick-drag="1">
+
+      <wnd mark="drop" pos="0,0,-0,2" skin="drop_line_bg"/>
+
+      <row mark="template" width="full" height="52" skin="common_listctrl_row_color" tip-type="custom">
+        <list-item width="full" height="full">
+          <static pos="0,-1,-0,=1" skin="radio_sep_line"/>
+          <button id="1" pos="11,|-15,=30,=30" skin="btn_radio_play" tip="@play"/>
+          <button id="6" pos="-25,6,=15,=15" skin="btn_radio_delete" tip="@delete_radio"/>
+          <static id="5" pos="56,0,-10,-0" text-skin="radio_text" tip-type="text" handle-mouse-hover="1"/>
+          <image-wnd id="3" pos="6,|-20,=40,=40"/>
+          <static id="13" pos="6,|-20,=40,=40" skin="default_radio_image_mini"/>
+          <static id="14" pos="6,|-20,=40,=40" skin="private_radio"/>
+        </list-item>
+      </row>
+
+      <row mark="focus" width="full" height="80" skin="playing_listctrl_row_color" tip-type="custom">
+        <list-item width="full" height="full" skin="playing_song_item_mask">
+          <static pos="0,-1,-0,=1" skin="radio_sep_line"/>
+          <button id="1" pos="21,|-15,=30,=30" skin="btn_radio_play" tip="@play"/>
+          <button id="2" pos="21,|-15,=30,=30" skin="btn_radio_pause" tip="@pause"/>
+          <button id="6" pos="-25,6,=15,=15" skin="btn_radio_delete" tip="@delete_radio"/>
+          <static id="5" pos="76,8,-10,=20" text-skin="playing_radio_text_title" tip-type="text" handle-mouse-hover="1"/>
+          <button id="7" pos="72,-28,=18,=18" skin="btn_radio_play_next" tip="@next_song"/>
+          <static pos="95,-23,=1,=9" skin="radio_button_sep_line"/>
+          <button id="8" pos="101,-28,=18,=18" skin="btn_radio_download" tip="@download_btn_tip"/>
+          <static pos="124,-23,=1,=9" skin="radio_button_sep_line"/>
+          <button id="15" pos="130,-28,=18,=18" skin="send_to_device_playing" tip="@send_to_device_btn_tip"/>
+          <static pos="153,-23,=1,=9" skin="radio_button_sep_line"/>
+          <button id="9" pos="159,-28,=18,=18" skin="btn_radio_dislike" tip="@dislike_song"/>
+          <static id="10" pos="76,28,-10,=20" text-skin="playing_radio_text" tip-type="text" handle-mouse-hover="1"/>
+          <animate-wnd id="11" pos="8,-22,=14,=8"  animate="playing_song_animate" auto="1" skin="playing_song_animate"/>
+          <static id="12" pos="8,-22,=14,=8" skin="playing_song_animate"/>
+          <image-wnd id="3" pos="6,|-30,=60,=60"/>
+          <static id="13" pos="6,|-30,=60,=60" skin="default_radio_image"/>
+          <static id="14" pos="6,|-30,=60,=60" skin="private_radio"/>
+        </list-item>
+      </row>
+
+    </rowbody>
+  </listctrl>
+
+</div>

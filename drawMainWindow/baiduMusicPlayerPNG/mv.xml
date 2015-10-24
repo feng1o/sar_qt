@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="|-269, |-207, =652, =540" min-width="652" min-height="502" app="1" double-layer="1" resize="1" movable="1" visible="0" managed-skin="0" round="2" system-menu="1"  parent-rect-limit="1">
+
+  <div pos="0, 0, -0, -0">
+    <div pos="0, 0, -0, 38" skin="mv_title_bg">
+      <button id="63114" skin="btn_close" pos="-24, |-12, =24, =24" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <button id="63116" skin="btn_maximize_restore" pos="-48, |-12, =24, =24" tip="@mv_maximize" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <button id="63115" skin="btn_min" pos="-72, |-12, =24, =24" tip="@minimize" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <static id="63117" pos="10, 0, -74, -0" text="@mv_title" text-skin="mv_wnd_title"/>
+    </div>
+    <div pos="0,38,-0,-0" skin="common_white_color">
+      <realctrl id="63118" pos="0, 0, -0, -0" visible="1" />
+    </div>
+
+  </div>
+
+</dialog>

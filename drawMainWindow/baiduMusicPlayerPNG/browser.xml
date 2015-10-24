@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<div id="20005" pos="0,0,-0,-0">
+
+  <div pos="0,32,-0,-0">
+    <div id="21001" pos="0, 0, -0, -0">
+      <realctrl id="21003" pos="0, 0, -0, -0" visible="1" real-time-refresh="1"/>
+    </div>
+  </div>
+
+  <div id="21005" pos="0,0,-0,32" skin="browser_title_cover">
+    <div pos="|-267, 0, =534,-0">
+      <button  id="20012" type="push" pos="0,0,=89,-0"  skin="browser_title_btn" text-skin="default_white_center" text="@recommend" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <button id="20013" type="push" pos="89,0,=89,-0" skin="browser_title_btn" text-skin="default_white_center" text="@bangdan" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <button id="20017" type="push" pos="178,0,=89,-0" skin="browser_title_btn" text-skin="default_white_center" text="@ge_dan" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <button id="20014" type="push" pos="267,0,=89,-0" skin="browser_title_btn" text-skin="default_white_center" text="@radio" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <button  id="20015" type="push" pos="356,0,=89,-0" skin="browser_title_btn" text-skin="default_white_center" text="@singer" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <button id="20016" type="push" pos="-89,0,=89,-0" skin="browser_title_btn" text-skin="default_white_center" text="@classify" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+  </div>
+
+</div>
+
+
+

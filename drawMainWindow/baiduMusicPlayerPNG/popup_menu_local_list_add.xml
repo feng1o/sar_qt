@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="0,0,=182,=82" app="0" movable="0" double-layer="1" snap="0" visible="0" skin="menu_shadow">
+  <div pos="7,7,-7,-7">
+    <button id="1" pos="0,0,-0,=34" text-pos="22,0,-0,-0" skin="menu_listctrl_row_color" text="@add_files" text-skin="song_list_content"/>
+    <button id="2" pos="0,34,-0,=34" text-pos="22,0,-0,-0" skin="menu_listctrl_row_color" text="@add_fold" text-skin="song_list_content"/>
+  </div>
+</dialog>

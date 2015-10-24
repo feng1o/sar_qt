@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog text="@device_operate_title" pos="|-328,|-250,=678,=510" app="0" double-layer="1" movable="1" visible="0" frame-skin="common_dialog_frame" skin-pos="1,1,-1,-1" skin="main_bg" managed-skin="1" managed-enable="0" round="2">
+
+  <div pos="1,1,-1,-1">
+
+    <div pos="0,0,-0,30" skin="common_window_title_cover">
+      <static pos="8,|-9,=18,=18" skin="send_to_device_playing"/>
+      <static pos="26,0,-24,-0" text-skin="wnd_title" text="@device_operate_title"/>
+      <button id="10000" skin="btn_close" pos="-22,|-8,=17,=17" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+
+    <div pos="0,30,-0,-0" skin="common_dialog_content_bg">
+      <div pos="0, 0, -0, -0" skin="device_operate_bg">
+
+        <div pos="8,8,=436,-8" skin="device_rect_line">
+          
+          <!--选中列表歌曲的操作头部-->
+          <div pos="1,1,-1,=40" skin="device_operate_title_bg" text-pos="8,10,=200,=20" text-skin="name_list_content" text="@device_add_song_prompt">
+            <button id="20003" pos="-83,|-13,=78,=27" skin="device_load_all"/>
+            <static pos="0,-1,-0,=1" skin="device_rect_line"/>
+          </div>
+          
+          <!--可用于导入的列表的列表-->
+          <listctrl id="20001" pos="1,41,=138,-1" skin="common_white_color">
+            <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+              <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+                <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+              </div>
+            </scroll>
+
+            <rowbody pos="0,0,-0,-0" multi-select="0" always-select="1">
+              <row mark="template" pos="0,0,-0,=32" cursor="hand" skin-pos="0,1,-0,-2" skin="common_listctrl_row_color">
+                <list-item pos="0,0,-0,-0" text-skin="name_list_content" text-pos="5,0,-0,-0">
+                  <static id="2" pos="0,-1,-0,=1" skin="device_operate_list_cut_line"/>
+                  <static id="1" pos="0,1,-0,-1" skin="playing_song_item_mask"/>
+                </list-item>
+              </row>
+            </rowbody>
+          </listctrl>
+
+          <!--当前选中列表的歌曲列表-->
+          <listctrl id="20002" pos="140,41,=295,-1" skin="common_white_color">
+            <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+              <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+                <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+              </div>
+            </scroll>
+
+            <rowbody pos="0,0,-0,-0" multi-select="1">
+              <row mark="template" pos="0,0,-0,=32" cursor="hand" skin-pos="0,1,-0,-2" skin="common_listctrl_row_color">
+                <list-item pos="0,0,-0,-0">
+                  <static id="2" pos="0,0,-50,-0" text-pos="8,0,-0,-0" text-skin="name_list_content" handle-mouse-hover="1" tip-type="text"/>
+                  <button id="1" pos="-40,|-11,=22,=22" skin="device_operate_add_song" tip="@send_to_device_btn_tip"/>
+                  <static pos="0,-1,-0,=1" skin="device_song_list_cut_line"/>
+                </list-item>
+              </row>
+            </rowbody>
+          </listctrl>
+
+        </div>
+
+        <div pos="452,8,=215,-8" skin="device_rect_line">
+          <div-v id="30000" pos="1,1,-1,-1" fill-wnd-id="31001" show-all-child="0" skin="common_white_color">
+
+            <!--设备信息-->
+            <div pos="0,,-0,=100" skin="device_operate_title_bg">
+              <static pos="8,14,=34,=62" skin="device_icon"/>
+              <static id="30001" pos="55,14,-30,=20" text-skin="device_list_title"/>
+              <static id="30002" pos="55,34,-30,=20" text-skin="device_list_gray"/>
+              <static id="30003" pos="55,54,-30,=20" text-skin="device_list_gray"/>
+              <static pos="0,-1,-0,=1" skin="device_rect_line"/>
+            </div>
+
+            <!--导入中的状态-->
+            <div id="30017" pos="0,,-0,=80">
+              <wnd id="30005" pos="10,15,-0,=20" text-skin="default" handle-mouse-hover="1" tip-type="text"/>
+              <button id="30007" pos="|-32,48,=64,=25" skin="push_blue_button_bg" text-skin="default_center" text="@cancel" tip-type="text"/>
+              <static pos="0,-1,-0,=1" skin="device_rect_line"/>
+            </div>
+
+            <div id="30018" pos="0,,-0,=34" text-pos="10,0,-0,-0" text-skin="default" text="@device_no_record">
+              <static pos="0,-1,-0,=1" skin="device_rect_line"/>
+            </div>
+
+            <!--导入完成后的状态-->
+            <div id="30009" pos="0,,-0,=80" >
+              <static id="30010" pos="6,6,=37,=37" skin="device_loading_result_icon"/>
+              <static pos="45,6,-0,=18" text-skin="default" text="@device_load_finished"/>
+              <div-h pos="45,24,-0,=18">
+                <static id="30011" pos="0,0,0,-0" text-skin="default" adapt-text="1" adapt-text-vdock="center"/>
+                <static id="30012" pos=",0,=100,-0" text-skin="device_load_failed"/>
+              </div-h>
+              <button id="30008" pos="|-32,48,=64,=25" skin="push_blue_button_bg" text-skin="default_center" text="@device_clear" tip-type="text"/>
+              <static pos="0,-1,-0,=1" skin="device_rect_line"/>
+            </div>
+
+            <!--正在导入歌曲的列表-->
+            <listctrl id="31001" pos="0,,-0,=400">
+
+              <static pos="0,0,-0,-0" mark="empty" skin="empty_device_song_list"/>
+
+              <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+                <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+                  <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+                </div>
+              </scroll>
+
+              <rowbody pos="0,0,-0,-0" multi-select="0" always-select="1" row-count="0">
+                <row mark="template" pos="0,0,-0,=32" cursor="hand" skin-pos="0,1,-0,-2" skin="common_listctrl_row_color">
+                  <list-item pos="0,0,-0,-0" >
+                    <imagelist id="1" pos="6,|-9,=18,=18" skin="device_loading_state_icon" handle-mouse-hover="1"/>
+                    <imagelist id="6" pos="6,|-9,=18,=18"  skin="device_loading_progress" handle-mouse-hover="1"/>
+                    <static id="2" pos="0,0,-0,-0" text-pos="25,0,-50,-0"  text-skin="name_list_content" handle-mouse-hover="1" tip-type="text"/>
+                    <static id="3" pos="-60,0,=32,-0" text-skin="name_list_content_right"/>
+                    <button id="5" pos="-28,|-9,=18,=18" skin="btn_close_red"/>
+                    <static pos="0,-1,-0,=1" skin="device_song_list_cut_line"/>
+                    <static id="4" pos="0,1,,-2" skin="device_loading_item_fill"/>
+                  </list-item>
+                </row>
+              </rowbody>
+            </listctrl>
+          </div-v>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</dialog>

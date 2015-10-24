@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dialog pos="|-161,|-184,=322,=368" app="0" movable="1" double-layer="1" snap="0" visible="0" skin="main_shadow" skin-pos="1,1,-1,-1" managed-skin="0" round="2" parent-rect-limit="1">
+  <div pos="30,30,-30,-30">
+
+    <div pos="0,0,-0,=40" skin="device_connect_title_bg">
+      <static id="1000" pos="20,8,,=20" text-skin="default_title" text="@select_backup_title" adapt-text="1" adapt-text-vdock="center"/>
+      <button id="1" skin="btn_login_close" pos="-32,0,=32,=35" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+
+    <div id="20002" pos="0,40,-0,-0" skin="common_white_color" handle-mouse="ff">
+      <animate-wnd pos="|-9,|-9,=18,=18" animate="theme_loading_animate" auto="1"/>
+    </div>
+    
+    <div pos="0,40,-0,-40" skin="common_dialog_content_bg">
+      <div pos="0,0,-0,-0" skin="common_window_content_cover">
+
+        <listctrl id="20001" pos="0,0,-0,-0" >
+          <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+
+          <rowbody pos="0,0,-0,-0" multi-select="0">
+            <row mark="template" pos="0,0,-0,=32" cursor="hand" skin="common_listctrl_row_color">
+              <list-item pos="0,0,-0,-0" >
+                <button id="1" pos="12,1,-0,-1" skin="common_checkbox"/>
+                <static id="2" pos="12,1,-0,-1" text-pos="21,0,-0,-0" text-skin="sync_list_content" tip-type="text" adapt-text="1" adapt-text-vdock="center"/>
+                <static id="3" pos=",1,=80,-1" text-skin="sync_list_content_error" text="@cloud_list_lack_of_space_title"/>
+                <static pos="0,-1,-0,=1" skin="device_song_list_cut_line"/>
+              </list-item>
+            </row>
+          </rowbody>
+
+        </listctrl>
+        </div>
+    </div>
+
+    <div pos="0,-40,-0,=40" skin="sync_select_bottom">
+      <button id="2" pos="|-54,6,=107,=28" text="@start_backup" skin="blue_button_bg" text-skin="default_white_center" tip-type="text"/>
+    </div>
+
+  </div>
+
+</dialog>

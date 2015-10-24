@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dialog pos="0,112,=340,=428" app="0" double-layer="1" visible="0" skin="playing_song_list_even" system-menu="0" parent-rect-limit="1">
+
+  <div pos="0,0,-0,=46">
+    <static id="181002" pos="15,0,-30,-0" text-skin="playing_song_list_song_title"/>
+    <button id="181001" pos="-30,|-9,=18,=18" skin="btn_song_list_close_playing"/>
+    <static pos="0,-2,-0,=2" skin="playing_song_list_cut_line"/>
+  </div>
+  <tabctrl id="9001" pos="0,46,-0,-0" handle-mouse="ff">
+    <tab-page-body pos="0,0,-0,-0">
+      <file src="playing_song_list.xml" pos="0,0,-0,-0"/>
+      <file src="playing_radio_list.xml" pos="0,0,-0,-0"/>
+    </tab-page-body>
+  </tabctrl>
+  
+</dialog>

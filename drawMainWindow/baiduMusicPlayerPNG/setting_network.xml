@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<div skin="setting_page_bk" pos="0, 0, -0, -0">
+  <div-v  id="31611" pos="1,1,-1,-1" show-all-child="0">
+    
+    <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+      <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+        <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+      </div>
+    </scroll>
+    
+    <div pos="0,,-0,=125">
+      <static pos="18,22,122,=20" text-skin="content_title" text="@setting_network_buffer" />
+
+      <static pos="18,62,=100,=24" text-skin="default" text="@setting_network_buffer_size" />
+      <edit id="31601" pos="80,57,=47,=30" skin="common_ctrl_frame" text-pos="2,1,-2,-1" edit-pos="2,1,-2,-1" text-skin="default_center" number="1" dynamic-real-wnd="1"/>
+      <static pos="137,62,=150,=24" text-skin="default" text="@setting_network_buffer_size_unit" />
+
+      <static pos="18,97,=100,=24" text-skin="default" text="@setting_network_buffer_path" />
+      <edit id="31602" pos="80,93,=280,=30" skin="common_ctrl_frame" text-pos="2,1,-2,-1" edit-pos="2,1,-2,-1" text-skin="default" readonly="1" dynamic-real-wnd="1"/>
+      <button id="31609" pos="370,93,=70,=30" skin="setting_change_path" text-skin="default_white_center" text="@setting_download_browse"/>  
+    </div>
+
+    <div pos="0,,-0,=70">
+      <static pos="18,17,=100,=20" text-skin="content_title" text="@setting_network_mode" />
+
+      <radiobox id="31603" pos="18,50,-20,=20">
+        <radio pos="0,0,=125,-0" text-pos="20,0,-0,-0" skin="common_radio" text-skin="default" text="@setting_network_play_priority" />
+        <radio pos="150,0,=125,-0" text-pos="20,0,-0,-0" skin="common_radio"  text-skin="default" text="@setting_network_browser_priority" />
+      </radiobox>
+    </div>
+
+    <div pos="0,,-0,=122">
+      <static pos="18,22,=100,=20" text-skin="content_title" text="@setting_network_proxy" />
+
+      <div pos="18,50,-40,=190" >
+        <radiobox id="31604" pos="0,0,-10,=90">
+          <radio pos="0,0,=125,=20" text-pos="20,0,-0,-0" skin="common_radio" text-skin="default" text="@setting_network_proxy_no"/>
+          <radio pos="0,25,=220,=20" text-pos="20,0,-0,-0" skin="common_radio" text-skin="default" text="@setting_network_proxy_ie"/>
+          <radio pos="0,50,=160,=20" text-pos="20,0,-0,-0" skin="common_radio" text-skin="default" text="@setting_network_proxy_custom"/>
+        </radiobox>
+      </div>
+    </div>
+
+    <div id="31610" pos="0,,-0,=80">
+      <static pos="45,20,=60,=24" text="@setting_network_proxy_server" text-skin="default"/>
+      <edit id="31605" pos="90,15,=127,=30" skin="common_ctrl_frame" text-pos="2,1,-2,-1" edit-pos="2,1,-2,-1" text-skin="default" dynamic-real-wnd="1"/>
+      
+      <static pos="228,20,=50,=24" text="@setting_network_proxy_port" text-skin="default"/>
+      <edit id="31606" pos="260,15,=127,=30" skin="common_ctrl_frame" text-pos="2,1,-2,-1" edit-pos="2,1,-2,-1" number="1" text-skin="default" dynamic-real-wnd="1"/>
+      
+      <static pos="45,55,=60,=24"  text="@setting_network_proxy_username" text-skin="default"/>
+      <edit id="31607" pos="90,50,=127,=30" skin="common_ctrl_frame" text-pos="2,1,-2,-1" edit-pos="2,1,-2,-1" text-skin="default" dynamic-real-wnd="1"/>
+      
+      <static pos="228,55,=50,=24" text="@setting_network_proxy_password" text-skin="default"/>
+      <edit id="31608" pos="260,50,=127,=30" skin="common_ctrl_frame" dynamic-real-wnd="1" edit-pos="2,6,-2,-6" password="1" text-skin="default"/>
+      
+    </div>
+    
+  </div-v>
+</div>

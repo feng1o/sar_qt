@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="|-276, |-141, |276, |141" app="0" double-layer="1" movable="1" visible="0"  frame-skin="common_dialog_frame" skin-pos="1,1,-1,-1" skin="main_bg" managed-skin="1" managed-enable="0" round="2">
+
+  <div pos="1, 1, -1, -1">
+    <!-- caption -->
+    <div pos="0,0,-0,30" skin="common_window_title_cover">
+      <static pos="10, 0, -30, -0" text="@song_property_info_title" text-skin="wnd_title"></static>
+      <button id="60000" skin="btn_close" pos="-23,|-9,=18,=18" tips="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+
+    <div pos="0, 30, -0, -0" skin="common_dialog_content_bg">
+      <div pos="0, 0, -0, -0" skin="common_window_content_cover">
+
+        <div pos="0, 0, 160, 200">
+          <image-wnd id="60001" pos="20, 20, 150, 150" skin="default_album_big" visible="1"/>
+          <image-wnd id="60002" pos="20, 20, 150, 150" skin="song_property_info_album" visible="0"/>
+          <image-wnd id="60021" pos="20, 20, 150, 150" visible="0"/>
+          <button id="60003" pos="40,160,130,185" text="@song_property_info_change_album" skin="common_button_bg" text-skin="default_button"></button>
+        </div>
+
+        <div pos="160, 0, -20, 200">
+          <static pos="0,20,=35,=25" text="@song" text-skin="default_gray"></static>
+          <edit id="60004" pos="35,21,=190,=23" text-pos="5,1,-5,-1" edit-pos="5,1,-5,-1" skin="common_ctrl_frame" text-skin="default" dynamic-real-wnd="1"/>
+
+          <static pos="0,55,=35,=25" text="@artist" text-skin="default_gray"></static>
+          <edit id="60005" pos="35,56,=190,=23" text-pos="5,1,-5,-1" edit-pos="5,1,-5,-1" skin="common_ctrl_frame" text-skin="default" dynamic-real-wnd="1"/>
+
+          <static pos="0,90,=35,=25" text="@album" text-skin="default_gray"></static>
+          <edit id="60006" pos="35,91,=190,=23" text-pos="5,1,-5,-1" edit-pos="5,1,-5,-1" skin="common_ctrl_frame" text-skin="default" dynamic-real-wnd="1"/>
+
+          <static pos="0,125,=35,=25" text="@song_property_info_style" text-skin="default_gray"></static>
+          <combobox id ="60007" pos="35, 125, =90, =25">
+            <button mark="dropdown-button" pos="-18,2,-1,=21" skin="common_comobox_drop_btn"></button>
+            <edit id="60020" mark="content" pos="0,1,-0,=23" text-pos="5,1,-18,-1" edit-pos="5,1,-18,-1" skin="common_ctrl_frame" text-skin="default" dynamic-real-wnd="1"/>
+            <combobox-dropdown mark="dropdown" pos="0,25,-0,230" visible="0">
+              <listctrl id="60008" pos="0,0,-0,-0" skin="common_ctrl_frame">
+                <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+                  <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+                    <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+                  </div>
+                </scroll>
+                <rowbody pos="0,0,-0,-0" drop-inner="3" drop-file="1" multi-select="0" max-height="210">
+                  <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+                    <list-item width="full" height="full" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+                  </row>
+                </rowbody>
+              </listctrl>
+            </combobox-dropdown>
+          </combobox>
+
+          <static pos="135,125,=43,=25" text="@song_property_info_time" text-skin="default_gray"></static>
+          <wnd id="60009" pos="178,125,=47,=25" text-skin="default_gray"></wnd>
+
+          <static pos="0,160,=43,=25" text="@song_property_info_source" text-skin="default_gray"></static>
+          <wnd id="60010" pos="43,160,-0,=25" text-skin="default_gray"></wnd>
+
+          <static skin="common_vert_split" pos="233,0,235,160"/>
+
+          <static pos="240,20,=43,=25" text="@song_property_info_type" text-skin="default_gray"></static>
+          <wnd id="60011" pos="283,20,-0,=25" text-skin="default_gray"></wnd>
+
+          <static pos="240,55,=43,=25" text="@song_property_info_format" text-skin="default_gray"></static>
+          <wnd id="60012" pos="283,55,-0,=25" text-skin="default_gray"></wnd>
+
+          <static pos="240,90,=43,=25" text="@song_property_info_rate" text-skin="default_gray"></static>
+          <wnd id="60013" pos="283,90,-0,=25" text-skin="default_gray"></wnd>
+
+          <static pos="240,125,=43,=25" text="@song_property_info_replay_gain" text-skin="default_gray"></static>
+          <wnd id="60014" pos="283,125,-0,=25" text-skin="default_gray"></wnd>
+
+        </div>
+
+        <static skin="common_horz_split" pos="20,200,-20,202" />
+
+        <button id="60015" pos="20,210,=65,=25" text="@prev_song" skin="common_button_bg" text-skin="default_button"></button>
+        <button id="60016" pos="95,210,=65,=25" text="@next_song" skin="common_button_bg" text-skin="default_button"></button>
+        <button id="60017" pos="-250,210,-185,=25" text="@refresh" skin="common_button_bg" text-skin="default_button"></button>
+        <button id="60018" pos="-175,210,-95,=25" text="@song_property_info_save" skin="common_button_emphasize_bg" text-skin="default_button"></button>
+        <button id="60019" pos="-85,210,-20,=25" text="@close" skin="common_button_bg" text-skin="default_button"></button>
+
+      </div>      
+    </div>
+
+  </div>
+</dialog>
