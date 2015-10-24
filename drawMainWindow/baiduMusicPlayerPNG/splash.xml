@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dialog pos="|-500,|-320,=1000,=640" text="@product_name" app="0" movable="0" double-layer="1" snap="0" visible="0" system-menu="0" >
+  <image-wnd id="101011" pos="0,0,-0,-0" hv-warpmode="fill" switch-animate="splash_pic_animate"/>
+</dialog>

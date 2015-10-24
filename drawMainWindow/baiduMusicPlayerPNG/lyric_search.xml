@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="|-289, |-189, =578, =378" app="0" double-layer="1" movable="1" visible="0" skin="main_shadow" parent-rect-limit="1">
+
+  <div pos="30,30,-30,-30">
+    <div pos="0, 0, -0, 38" skin="common_window_title_cover">
+      <button id="61002" skin="btn_download_close" pos="-32,0,=32,=35" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+      <static pos="20, 0, 100, -0" text="@lyric_search_title" text-skin="default"/>
+    </div>
+
+    <div pos="0, 38, -0, -0" skin="common_white_color">
+
+      <div pos="20,13,-20,=30">
+        <static pos="0,0,=38,-0" text="@song" text-skin="default"/>
+        <edit id="61003" pos="38,0,=144,=30" skin="common_ctrl_frame" text-pos="5,1,-5,-1" edit-pos="5,1,-5,-1" text-skin="default" dynamic-real-wnd="1"/>
+        <button id="61013" pos="196,0,=30,=30" skin="lyric_search_trans_titleartist" tips="@lyric_search_trans_titleartist" text-skin="default_button"/>
+        <static pos="235,0,=35,-0" text="@artist" text-skin="default"/>
+        <edit id="61004" pos="272,0,=124,=30" skin="common_ctrl_frame" text-pos="5,1,-5,-1" edit-pos="5,1,-5,-1" text-skin="default" dynamic-real-wnd="1"/>
+        <button id="61005" pos="410,0,=68,-0" skin="common_ok_button_bg" tips="@search" text="@search" text-skin="default_white_center"/>
+      </div>
+
+      <listctrl id="61007" pos="20,56,-20,=150">
+        <scroll pos="-11, 29, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+          <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+            <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+          </div>
+        </scroll>
+
+        <static mark="empty" pos="0,|-15,-0,=30" text-skin="default_center" text="@no_searched_lyric"/>
+        
+        <list-head pos="1,1,-1,=28">
+          <list-col pos="0,0,=270,-0" text-skin="default_gray" text="@song" text-pos="5,0,-5,-0">
+            <static pos="0,-1,-0,=1" skin="common_list_border_color"/>
+            <static pos="-1,0,=1,-1" skin="common_list_border_color"/>
+          </list-col>
+          <list-col pos="0,0,=206,-0" text-skin="default_gray" text="@artist" text-pos="5,0,-5,-0">
+            <static pos="0,-1,-0,=1" skin="common_list_border_color"/>
+          </list-col>
+        </list-head>
+        <rowbody pos="1,29,-1,-1" multi-select="0">
+          <row mark="template" width="full" height="40">
+            <list-item pos="0,0,=270,-0" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+            <list-item pos="0,0,=206,-0" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+
+            <div pos="0,0,-0,-0" mark="free">
+              <static id="3" pos="0,0,-0,-0" skin="common_song_list_mouse_move" visible="0"/>
+              <static id="1" pos="0,0,-0,-0" skin="common_listctrl_row_color_0" visible="0"/>
+              <static id="2" pos="0,0,-0,-0" skin="common_listctrl_row_color_1" visible="0"/>
+            </div>
+          </row>
+          
+        </rowbody>
+
+        <static pos="0,0,-0,=1" skin="common_list_border_color"/>
+        <static pos="0,-1,-0,=1" skin="common_list_border_color"/>
+        <static pos="0,1,=1,-1" skin="common_list_border_color"/>
+        <static pos="-1,1,=1,-1" skin="common_list_border_color"/>
+      </listctrl>
+
+      <!-- bottom -->
+      <div pos="20,-56,-20,=36">
+        <button id="61014" pos="0,0,=80,-0" text="@associate_local_lyric" text-skin="default_link_button" tip-type="text"/>
+        <button id="61011" pos ="-230,0,=105,-0" skin="common_ok_button_bg" text="@ok" tip-type="text" text-skin="default_white_center"/>
+        <button id="61012" pos ="-105,0,=105,-0" skin="common_cancel_button_bg" text="@cancel" tip-type="text" text-skin="default_button"/>
+      </div>
+
+    </div>
+    
+  </div>
+
+
+
+</dialog>

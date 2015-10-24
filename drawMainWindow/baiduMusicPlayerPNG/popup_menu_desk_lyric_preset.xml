@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="0,0,=182,=184" app="0" movable="0" double-layer="1" snap="0" visible="0" skin="menu_shadow">
+  <div pos="7,7,-7,-7" skin="common_listctrl_header_color">
+    <div pos="0,0,-0,=34" >
+      <static pos="22,|-11,=22,=22" skin="lyric_desk_preset_red" />
+      <static id="141011" pos="132,|-6,=12,=12" skin="lyric_desk_preset_check" visible="0"/>
+      <button id="141001" pos="0,0,-0,-0" text-pos="62,0,-0,-0" skin="menu_listctrl_row_color" text="@desklyric_preset_red" text-skin="song_list_content"/>
+    </div>
+    <div pos="0,34,-0,=34">
+      <static pos="22,|-11,=22,=22" skin="lyric_desk_preset_yellow" />
+      <static id="141012" pos="132,|-6,=12,=12" skin="lyric_desk_preset_check" visible="0"/>
+      <button id="141002" pos="0,0,-0,-0" text-pos="62,0,-0,-0" skin="menu_listctrl_row_color" text="@desklyric_preset_yellow" text-skin="song_list_content"/>
+    </div>
+    <div  pos="0,68,-0,=34">
+      <static pos="22,|-11,=22,=22" skin="lyric_desk_preset_blue" />
+      <static id="141013" pos="132,|-6,=12,=12" skin="lyric_desk_preset_check" visible="0"/>
+      <button id="141003" pos="0,0,-0,-0" text-pos="62,0,-0,-0" skin="menu_listctrl_row_color" text="@desklyric_preset_blue" text-skin="song_list_content"/>
+    </div>
+    <div pos="0,102,-0,=34">
+      <static pos="22,|-11,=22,=22" skin="lyric_desk_preset_green" />
+      <static id="141014" pos="132,|-6,=12,=12" skin="lyric_desk_preset_check" visible="0"/>
+      <button id="141004" pos="0,0,-0,-0" text-pos="62,0,-0,-0" skin="menu_listctrl_row_color" text="@desklyric_preset_green" text-skin="song_list_content"/>
+    </div>
+    <div pos="0,136,-0,=34">
+      <static pos="22,|-11,=22,=22" skin="lyric_desk_preset_pink" />
+      <static id="141015" pos="132,|-6,=12,=12" skin="lyric_desk_preset_check" visible="0"/>
+      <button id="141005" pos="0,0,-0,-0" text-pos="62,0,-0,-0" skin="menu_listctrl_row_color" text="@desklyric_preset_pink" text-skin="song_list_content"/>
+    </div>
+  </div>
+</dialog>

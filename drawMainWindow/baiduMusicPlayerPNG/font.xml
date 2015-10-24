@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<fonts>
+
+  <font name="default" family="微软雅黑" size="12" bold="0" italic="0" underline="0" unit="pixel" argb="fe000000"/>
+  <font name="default_gray" rgb="686868"/>
+  <font name="default_red" rgb="fd874d"/>
+  <font name="default_link" rgb="3da5ff"/>
+  <font name="default_link_disable" rgb="9c9c9c"/>
+  <font name="default_disable" rgb="9c9c9c"/>
+  <font name="default_white" rgb="ffffff"/>
+  <font name="wnd_title" size="12" rgb="ffffff"/>
+  <font name="page_title" rgb="686868"/>
+  <font name="page_title_select" bold="1"/>
+  <font name="content_title"  size="14" bold="1"/>
+  <font name="content" />
+  <font name="default_error" rgb="fd873d"/>
+  <font name="edit_prompt" rgb="afafaf"/>
+  <font name="blank_prompt" rgb="9c9c9c"/>
+  <font name="default_title" size="14" rgb="333333"/>
+
+  <!--edit-->
+  <font name="edit_gray" family="宋体" size="12" bold="0" italic="0" underline="0" unit="pixel" argb="fe686868"/>
+  <font name="edit_disable" family="宋体" size="12" bold="0" italic="0" underline="0" unit="pixel" argb="fe9c9c9c"/>
+  
+  <!--均衡器相关-->
+  <font name="equalizer_content_title" bold="1" size="14" rgb="171717"/>
+
+  <!--转码相关-->
+  <font name="transcode_progress_text" family="Arial" size="10"/>
+
+  <!--播放列表-->
+  <font name="name_list_header" size="14" rgb="000000"/>
+  <font name="name_list_title" rgb="a0a0a0"/>
+  <font name="name_list_content" rgb="383838"/>
+  <font name="name_list_content_select" rgb="ffffff"/>
+  <font name="download_title" rgb="616161"/>
+  <font name="song_list_title" rgb="999999"/>
+  <font name="song_list_content" rgb="686868"/>
+  <font name="song_list_playing_content" rgb="41b0ff"/>
+  <font name="playing_song_item" rgb="ffffff"/>
+  <font name="song_tip_title" rgb="686868"/>
+  <font name="song_tip_info" rgb="343434"/>
+  <font name="menu_gray" rgb="a9a9a9"/>
+  <font name="song_list_content_error" rgb="bebebe"/>
+  <font name="playing_song_list_content_error" rgb="464646"/>
+  <font name="song_list_prompt" rgb="e1e1e1"/>
+  <font name="song_list_prompt_center" size="14" rgb="ffffff"/>
+  <font name="song_list_error_prompt" rgb="f43131"/>
+  <font name="song_list_error_retry" rgb="0275ec" underline="1"/>
+  <font name="song_list_empty" rgb="adadad"/>
+  <font name="radio_text" rgb="39393a" size="12"/>
+  <font name="playing_radio_text" rgb="ffffff" size="12"/>
+  <font name="playing_radio_text_title" rgb="ffffff" size="12" bold="1"/>
+  <font name="song_upload_progress" rgb="0066ae" size="10" family="Arial" />
+  <font name="song_list_gray" size="14" rgb="a9a9a9" family="微软雅黑"/>
+  <font name="song_list_title_gray" rgb="323232" size="15" family="微软雅黑"/>
+
+  <font name="browser_bottom" rgb="6c6c6c"/>
+
+
+  <!--主题皮肤相关-->
+  <font name="theme_tab_text_normal" rgb="919191" size="14"/>
+  <font name="theme_tab_text_select" rgb="383838" size="14" bold="1"/>
+  <font name="theme_link_text" rgb="ffaa23" size="12" underline="1"/>
+
+  <!--搜索-->
+  <font name="search_title" rgb="696868"/>
+  <font name="search_class" rgb="686868"/>
+  <font name="search_content" rgb="383838"/>
+
+  <!--设置-->
+  <font name="setting_list_text" rgb="343434"/>
+
+  <!--下载-->
+  <font name="download_info" rgb="373737"/>
+  <font name="download_sub_info" family="Arial" size="10" rgb="a1a1a1"/>
+  <font name="download_status" rgb="686868"/>
+  <font name="download_fail" rgb="d73b2e"/>
+  <font name="download_retry" rgb="0075e9" underline="1"/>
+  <font name="download_tab" rgb="999999"/>
+  <font name="download_tab_select" rgb="393939"/>
+  <font name="download_popup_title" size="14" bold="1" argb="fe000000"/>
+
+  <!--关于-->
+  <font name="about_main_title" bold="1" size="14" rgb="181818"/>
+  <font name="about_content" size="12" rgb="a0a0a0"/>
+
+  <!--发送到设备-->
+  <font name="device_list_title" rgb="3e3d3d" size="14"/>
+  <font name="device_list_gray" rgb="686868"/>
+  <font name="device_list_state" rgb="2196e1"/>
+  <font name="green_font" rgb="1f861b"/>
+  <font name="device_song_count" rgb="259fed" size="20" family="Arial"/>
+  <font name="device_song_unit" rgb="259fed"/>
+  <font name="device_load_failed" rgb="ed7f14"/>
+  <font name="device_list_ad" rgb="1195ea"/>
+  <font name="downloading_look" rgb="ff9b4b"/>
+  <!--空间不足提示-->
+  <font name="big_prompt_red" rgb="e12516" size="21" family="微软雅黑"/>
+  <font name="big_prompt_gray" rgb="323232" size="15" family="微软雅黑"/>
+  <font name="big_prompt_white" rgb="ffffff" size="15" family="微软雅黑"/>
+  
+  <!--正在播放的列表-->
+  <font name="playing_song_list_song_title" rgb="979797" />
+  <font name="playing_song_list_song_artist" rgb="535353" />
+  <font name="playing_song_list_song_title_playing" rgb="49b1fb"/>
+  
+  <!--写真歌词-->
+  <font name="played_lyric_text" rgb="ffbd4a" size="20"/>
+  <font name="waiting_play_lyric_text" rgb="ffffff" size="20"/>
+  <font name="common_lyric_text" rgb="ffffff" size="16"/>
+  <font name="drag_lyric_text" rgb="ffbd4a" size="14"/>
+
+  <!--登录-->
+  <font name="login_title" rgb="323232" size="19" family="微软雅黑"/>
+ 
+  <!--accountc center-->
+  <font name="account_title" rgb="fd8a4e"/>
+  <font name="default_link_red" rgb="fd8a4e" underline="1"/>
+  
+  <!--scan-->
+  <font name="scan_text" rgb="535353"/>
+
+  <font name="mini_song_title" rgb="ffffff" size="14"/>
+  <font name="mini_artist" argb="7fffffff" size="12"/>
+  
+  <!--setting-->
+  <font name="default_link_blue" rgb="49b1fb" underline="1"/>
+  
+  <!--mv-->
+  <font name="mv_wnd_title" rgb="979797"/>
+  
+  <!--playmode-->
+  <font name="play_mode_select" rgb="5dbcff"/>
+</fonts>  

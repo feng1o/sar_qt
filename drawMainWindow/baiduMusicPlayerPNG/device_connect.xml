@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dialog text="@device_connect_title" pos="|-205, |-135,=410,=270" app="0" double-layer="1" movable="1" visible="0" skin="main_shadow" managed-skin="0" managed-enable="0" round="2" parent-rect-limit="1">
+
+  <div pos="30, 30, -30, -30">
+    <div pos="0, 0, -0,=40" skin="device_connect_title_bg">
+      <static  pos="20, 12, =100, =20" text-skin="default_title" text="@device_connect_title"/>
+      <button id="201001" skin="btn_login_close" pos="-32,0,=32,=35" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+
+    <div pos="0, 40, -0, -0" skin="common_white_color">
+       <div pos="|-140,|-60,=280,=90">
+         
+        <static pos="8,0,-10,=20" text-skin="default_title" text="@device_connect_content"/>
+        <div id="201002" pos="0,35,=196,=32" skin="connect_frame" cursor="ibeam" handle-mouse="ff" text-pos="8,1,-1,-5" text="@device_code_prompt" text-skin="edit_prompt" always-handle-mouse-move="1">
+          <edit id="201003" pos="8,5,-8,-5" skin="common_white_color" cursor="ibeam" text-skin="edit_gray" number="1" dynamic-real-wnd="1" max-text-count="10" visible="0"/>
+        </div>
+      
+        <button id="201006" pos="8, -20, -83, =20" text-skin="device_list_ad" text="@device_connect_get_vcode"/>
+      
+        <div id="201004" pos="-74,35,=72,=32" skin="device_connect" text-skin="default_white_center" text-pos="0,1,-0,-5" handle-mouse="ff" cursor="hand">
+          <animate-wnd id="201005" pos="0,0,-0,-0" animate="device_connecting_animate" auto="1" visible="0"/>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+
+</dialog>

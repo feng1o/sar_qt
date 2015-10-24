@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<div id="13533" pos="0,0,-0,-0" skin="account_text_bg_color" handle-mouse="ff">
+
+  <!--提示信息-->
+  <div-h id="13537" pos="1, |-22, -1, |21" skin="song_list_prompt_tips_bg" visible="0">
+    <static id="12051" pos="0, 0, =20, -0"/>
+    <div id="12052" pos="0, |-13, =26, |13">
+      <div id="12053" pos="0, 0, -0, -0"/>
+      <div id="12054" pos="0, 0, -0, -0" skin="song_list_prompt_tips_success" visible="0"/>
+      <div id="12055" pos="0, 0, -0, -0" skin="song_list_prompt_tips_error" visible="0"/>
+    </div>
+    <static id="12056" pos="0, 0, =10, -0"/>
+    <static id="12057" pos="0, 0, 0, -0" text-skin="song_list_prompt_center" adapt-text="1" adapt-text-vdock="center"/>
+    <static id="12058" pos="0, 0, =20, -0"/>
+  </div-h>
+  
+  <div id="13517" pos="0,-32,-0,=32" skin="green_frame" visible="0">
+    <div pos="1,1,-1,-1" skin="common_white_color">
+      <div id="13518" pos="1,1,-1,-1" text-pos="10,0,-50,-0" text-skin="green_font" above-child="1" handle-mouse-hover="1" tip-type="text">
+        <button id="13520" pos="-20,|-9,=18,=18" skin="btn_close_green" tip="@close"/>
+        <button id="13521" pos="-50,0,=30,-0" text-skin="default_link" text="@device_detail_button" tip-type="text"/>
+        <static id="13519" pos="0,0,,-0" skin="green_fill"/>
+      </div>
+    </div>
+  </div>
+
+<!--ad-->
+  <div id="13512" pos="-280,0,-0,-0" skin="device_ad">
+    <static pos="0,0,=1,-0" skin="device_cut_line"/>
+  </div>
+
+<!--left info when connected-->
+  <div id="31002" pos="0, 0, 410, -0">
+        <static pos="-1,0,=1,-0" skin="device_rect_line"/>
+        <listctrl id="13510" pos="|-97,|-260,=194,=445" adapt-child-height="1">
+        <rowbody pos="7,0,-7,-0" multi-select="0" always-select="0" adapt-child-height="1">
+          <row mark="template" pos="0,0,-0,=430" >
+            <list-item pos="0,0,-0,-5">
+              <static id="1" pos="0,36,=180,=346" skin="big_mobile"/>
+              <static id="6" pos="0,-20,-0,=20" text-skin="device_list_name"/>
+            </list-item>
+          </row>
+        </rowbody>
+      </listctrl>
+
+      <static id="30002" pos="146,-65,-30,=14" text-skin="device_list_gray"/>
+  </div>
+
+  <!--right info when connected-->
+  <div pos="410,0,-0,-0">
+    <div-v id="30000" pos="1,1,-1,-1" fill-wnd-id="31001" show-all-child="0">
+      <!--send queue title-->
+        <div pos="0,0,-0,=50">
+          <static pos="15,20,=70,=20" text-skin="default_title" text="@device_loading_title"/>
+          <static id="30011" pos="95,20,-100,=20" text-skin="default"/>
+          <button id="30007" pos="-95,|-15,=73,=30" skin="device_sending_cancle"/>
+          <button id="30008" pos="-95,|-15,=73,=30" skin="device_sended_clear" visible="0"/>
+           <static pos="0,-1,-0,=1" skin="device_rect_line"/>
+       </div>
+      
+      <div id="31003" pos="0,,-0,=26" skin="common_white_color">
+          <static pos="15,0,295,-0" text-skin="default" text="@song_title"/>
+          <static pos="295,0,=1,-0" skin="device_rect_line"/>
+          <static pos="305,0,477,-0" text-skin="default" text="@song_artist"/>
+          <static pos="477,0,=1,-0" skin="device_rect_line"/>
+         <static pos="492,0,-0,-0" text-skin="default" text="@song_size"/>
+          <static pos="0,-1,-0,=1" skin="device_rect_line"/>
+      </div>
+      
+      <listctrl id="31001" pos="0,,-0,-0">
+
+        <static pos="0,0,-0,-0" mark="empty" skin="empty_device_song_list"/>
+
+        <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+          <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+            <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+          </div>
+        </scroll>
+
+        <rowbody pos="0,0,-0,-0" multi-select="0" always-select="1" row-count="0">
+          <row mark="template" pos="0,0,-0,=40" cursor="hand" skin-pos="0,1,-0,-2">
+            <list-item pos="0,0,-0,-0" >
+              <static id="2" pos="15,0,255,-0"  text-skin="name_list_content" handle-mouse-hover="1" tip-type="text"/>
+              <static id="9" pos="305,0,477,-0" text-skin="name_list_content" handle-mouse-hover="1" tip-type="text"/>
+              <static id="3" pos="492,0,=50,-0" text-skin="name_list_content"/>
+              <imagelist id="1" pos="548,|-9,=17,=17" skin="device_loading_state_icon" handle-mouse-hover="1"/>
+              <animate-wnd id="6" pos="548,|-9,=18,=18"  animate="theme_loading_animate" skin="theme_loading_animate" auto="1"/>
+              <button id="5" pos="250,|-15,=44,=29" skin="btn_close_red"/>
+            </list-item>
+          
+            <div pos="0,0,-0,-0" mark="free">
+            <static id="7" pos="0,0,-0,-0" skin="common_listctrl_row_color_0" visible="0"/>
+            <static id="8" pos="0,0,-0,-0" skin="common_listctrl_row_color_1" visible="0"/>
+            </div>
+          </row>
+        </rowbody>
+      </listctrl>
+    </div-v>
+  </div>
+
+  <div id ="13530" pos="0, 0,-0,-0">
+    <div pos="93,|-113,=553,=223" skin="device_list_connect_bg">
+    <div pos="|-105,|-60,=280,=90">
+      <static pos="8,0,-10,=20" text-skin="default_title" text="@device_connect_content"/>
+      <div id="13529" pos="0,35,=196,=32" skin="connect_frame" cursor="ibeam" handle-mouse="ff" text-pos="8,1,-1,-5" text="@device_code_prompt" text-skin="edit_prompt" always-handle-mouse-move="1">
+        <edit id="13524" pos="8,5,-8,-5" skin="common_white_color" cursor="ibeam" text-skin="default_text" number="1" dynamic-real-wnd="1" max-text-count="10" visible="0"/>
+      </div>
+
+      <button id="13535" pos="8, -20, -83, =20" text-skin="device_list_ad" text="@device_connect_get_vcode"/>
+
+      <div id="13523" pos="-74,35,=72,=32" skin="device_connect" text-skin="default_white_center" text-pos="0,1,-0,-5" handle-mouse="ff" cursor="hand">
+        <animate-wnd id="13522" pos="0,0,-0,-0" animate="device_connecting_animate" auto="1" visible="0"/>
+      </div>
+    </div>
+  </div>
+  </div>  
+
+</div>

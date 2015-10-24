@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dialog pos="|-205,|-135,=410,=270" app="0" movable="1" double-layer="1" snap="0" visible="0" skin-pos="1,1,-1,-1" skin="main_shadow" managed-enable="1" managed-skin="0" round="2" parent-rect-limit="1">
+
+  <div pos="30,30,-30,-30">
+    <div pos="0, 0, -0,=40" skin="device_connect_title_bg">
+      <static  pos="20, 12, =100, =20" text-skin="default_title" text="@login_select_title"/>
+      <button id="1" skin="btn_login_close" pos="-32,0,=32,=35" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+
+    <div pos="0,40,-0,-0" skin="common_white_color">
+      <div pos="|-90,|-70,=180,=90">
+        <static pos="0,0,-0,=20" text="@login_select_content" text-skin="default_title"/>
+        <radiobox id="191027" pos="0,35,=100,=60">
+          <radio pos="0,0,-0,=26" skin="common_radio" text="@login_select_name" text-pos="25,0,-0,-0" text-skin="default"/>
+          <radio pos="0,26,-0,=26" skin="common_radio" text="@login_select_tel" text-pos="25,0,-0,-0" text-skin="default"/>
+        </radiobox>
+      </div>
+
+      <button id="2" pos="|-90,-50,=180,=30" text="@login_continue" skin="setting_save_all" text-skin="default_white_center"/>
+    </div>
+
+  </div>
+
+</dialog>

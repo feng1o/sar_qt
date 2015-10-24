@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<div skin="setting_page_bk" pos="0, 0, -0, -0">
+
+  <static pos="18,22,122,=20" text="@desk_lyric_setting_topic" text-skin="content_title" adapt-text="1"/>
+  <div pos="0, 0, -0, -0">
+
+    <static pos="32, 50, =55, =20" text-skin="default_gray" text="@desk_lyric_setting_showlines"></static>
+    <combobox id ="61651" pos="90, 49, =120, =22">
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=20" text-skin="default"></static>
+      <static pos="0,0,-0,=22" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,22,-0,64" visible="0">
+        <listctrl id="61652" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" row-count="2" drop-inner="3" drop-file="1" multi-select="0" max-height="42">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_showlines_single" tips="@desk_lyric_setting_showlines_single" text-pos="5,0,-5,-0"></list-item>
+            </row>
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_showlines_double" tips="@desk_lyric_setting_showlines_double" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>      
+    </combobox>
+
+    <static pos="225, 50, =55, =20" text-skin="default_gray_right" text="@lyric_setting_align_mode"></static>
+    <!--单行时对齐方式-->
+    <combobox id ="61653" pos="283, 49, =120, =22">
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=20" text-skin="default"></static>
+      <static pos="0,0,-0,=22" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,22,-0,85" visible="0">
+        <listctrl id="61654" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" row-count="3" drop-inner="3" drop-file="1" multi-select="0" max-height="63">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_align_left" tips="@desk_lyric_setting_align_left" text-pos="5,0,-5,-0"></list-item>
+            </row>
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_align_center" tips="@desk_lyric_setting_align_center" text-pos="5,0,-5,-0"></list-item>
+            </row>
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_align_right" tips="@desk_lyric_setting_align_right" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>
+    </combobox>
+    <!--双行时对齐方式-->
+    <combobox id ="61673" pos="283, 49, =120, =22" visible="0">
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=20" text-skin="default"></static>
+      <static pos="0,0,-0,=22" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,22,-0,106" visible="0">
+        <listctrl id="61674" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" row-count="4" drop-inner="3" drop-file="1" multi-select="0" max-height="84">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_align_left" tips="@desk_lyric_setting_align_left" text-pos="5,0,-5,-0"></list-item>
+            </row>
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_align_center" tips="@desk_lyric_setting_align_center" text-pos="5,0,-5,-0"></list-item>
+            </row>
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_align_right" tips="@desk_lyric_setting_align_right" text-pos="5,0,-5,-0"></list-item>
+            </row>
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text="@desk_lyric_setting_align_separate" tips="@desk_lyric_setting_align_separate" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>
+    </combobox>
+
+    <static pos="32, 80, =55, =20" text-skin="default_gray_right" text="@lyric_setting_font"></static>
+    <combobox id ="61655" pos="90, 79, =120, =22" >
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=20" text-skin="default"></static>
+      <static pos="0,0,-0,=22" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,22,-0,337" visible="0">
+        <listctrl id="61656" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" drop-inner="3" drop-file="1" multi-select="0" max-height="315">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>
+    </combobox>
+
+    <static pos="225, 80, =55, =20" text-skin="default_gray_right" text="@lyric_setting_font_size"></static>
+    <combobox id ="61684" pos="283, 79, =40, =22" >
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=20" text-skin="default"></static>
+      <static pos="0,0,-0,=22" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,22,-0,148" visible="0">
+        <listctrl id="61685" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" drop-inner="3" drop-file="1" multi-select="0" max-height="126">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>
+    </combobox>
+
+    <checkbox id="61657" pos="330, 80, =15, =20" skin="common_checkbox"></checkbox>
+    <button id="61658" pos="345, 80, =34, =20" text="@desk_lyric_setting_color_edge" skin="common_button_bg" text-skin="default_button"></button>
+    <checkbox id="61659" pos="386, 80, =15, =20" skin="common_checkbox"></checkbox>
+    <button id="61660" pos="401, 80, =34, =20" text="@desk_lyric_setting_shadow" skin="common_button_bg" text-skin="default_button"></button>
+    <checkbox id="61661" pos="442, 80, =15, =20" skin="common_checkbox"></checkbox>
+    <button id="61662" pos="457, 80, =34, =20" text="@lyric_setting_background_color" skin="common_button_bg" text-skin="default_button"></button>
+
+    <static pos="32, 110, =55, =20" text-skin="default_gray_right" text="@desk_lyric_setting_color_play"></static>
+    <div pos="90, 109, =22, =22">
+      <static id="61678" pos="3, 3, -3, -3" skin="setting_lyric_desk_play_color1"/>
+      <button id="61665" pos="0, 0, -0, -0" skin="common_button_bg"></button>
+    </div>
+    <div pos="117, 109, =22, =22">
+      <static id="61679" pos="3, 3, -3, -3" skin="setting_lyric_desk_play_color2"/>
+      <button id="61666" pos="0, 0, -0, -0" skin="common_button_bg"></button>
+    </div>
+    <div pos="144, 109, =22, =22">
+      <static id="61680" pos="3, 3, -3, -3" skin="setting_lyric_desk_play_color3"/>
+      <button id="61667" pos="0, 0, -0, -0" skin="common_button_bg"></button>
+    </div>
+    
+    <static pos="180, 110, =55, =20" text-skin="default_gray_right" text="@desk_lyric_setting_color_notplay"></static>
+    <div pos="238, 109, =22, =22">
+      <static id="61681" pos="3, 3, -3, -3" skin="setting_lyric_desk_notplay_color1"/>
+      <button id="61668" pos="0, 0, -0, -0" skin="common_button_bg"></button>
+    </div>
+    <div pos="265, 109, =22, =22">
+      <static id="61682" pos="3, 3, -3, -3" skin="setting_lyric_desk_notplay_color2"/>
+      <button id="61669" pos="0, 0, -0, -0" skin="common_button_bg"></button>
+    </div>
+    <div pos="292, 109, =22, =22">
+      <static id="61683" pos="3, 3, -3, -3" skin="setting_lyric_desk_notplay_color3"/>
+      <button id="61670" pos="0, 0, -0, -0" skin="common_button_bg"></button>
+    </div>
+
+    <static pos="343, 110, =55, =20" text-skin="default_gray_right" text="@desk_lyric_setting_profile"></static>
+    <combobox id ="61675" pos="401, 109, =90, =22">
+      <button mark="dropdown-button" pos="1,1,-1,-1" skin="common_comobox_drop_btn"></button>
+      <static mark="content" pos="5,1,-18,=20" text-skin="default"></static>
+      <static pos="0,0,-0,=22" skin="common_ctrl_frame"></static>
+      <combobox-dropdown mark="dropdown" pos="0,22,-0,127" visible="0">
+        <listctrl id="61676" pos="0,0,-0,-0" skin="common_ctrl_frame">
+          <scroll pos="-11, 1, -0, -1" max="100" value="0" orient="vert" min-thumb-len="10" scroll-step="0.1">
+            <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+              <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+            </div>
+          </scroll>
+          <rowbody pos="0,0,-0,-0" drop-inner="3" drop-file="1" multi-select="0" max-height="105">
+            <row mark="template" width="full" height="20" skin="common_listctrl_row_color">
+              <list-item width="full" height="full" text-skin="default" text-pos="5,0,-5,-0"></list-item>
+            </row>
+          </rowbody>
+        </listctrl>
+      </combobox-dropdown>
+    </combobox>
+
+    <static pos="32, 140, =55, =20" text-skin="default_gray_right" text="@desk_lyric_setting_text"></static>    
+    <slider id="61671" pos="90, 141, =134,=19" min="0" max="255" value="0" orient="horz">
+      <button pos="0,0,=19,-0" mark="thumb" skin="lyric_desk_slider_thumb" mouse-enter-animate="common_mouse_enter_gradient"></button>
+      <wnd pos="9,9,-10,=1" mark="value"></wnd>
+      <wnd pos="9,9,-10,=1" mark="back" skin="theme_line_1px"></wnd>
+    </slider>
+    <static pos="98, 160, =30, =20" text-skin="default_gray" text="@desk_lyric_setting_trans_0"></static>
+    <static pos="190, 160, =30, =20" text-skin="default_gray" text="@desk_lyric_setting_trans_100"></static>
+
+
+    <static pos="252, 140, =55, =20" text-skin="default_gray_right" text="@desk_lyric_setting_background"></static>
+    <slider id="61672" pos="310, 141, =134,=19" min="0" max="255" value="0" orient="horz">
+      <button pos="0,0,=19,-0" mark="thumb" skin="lyric_desk_slider_thumb" mouse-enter-animate="common_mouse_enter_gradient"></button>
+      <wnd pos="9,9,-10,=1" mark="value"></wnd>
+      <wnd pos="9,9,-10,=1" mark="back" skin="theme_line_1px"></wnd>
+    </slider>
+    <static pos="318, 160, =30, =20" text-skin="default_gray" text="@desk_lyric_setting_trans_0"></static>
+    <static pos="410, 160, =30, =20" text-skin="default_gray" text="@desk_lyric_setting_trans_100"></static>
+
+    <checkbox id="61663" pos="35, 185, =115, =20" text-pos="20,0,-0,-0" text-skin="default_gray" skin="common_checkbox" text="@lyric_setting_karaoke_mode"></checkbox>
+    <checkbox id="61664" pos="170, 185, =165, =20" text-pos="20,0,-0,-0" text-skin="default_gray" skin="common_checkbox" text="@desk_lyric_setting_unlock_when_close"></checkbox>
+   
+  </div>
+  
+  <static pos="18, 220, 122, =20" text-skin="content_title" text="@desk_lyric_setting_preview" adapt-text="1"/>
+  <div pos="32, 240, -32, =148" skin="lyric_preview_frame">
+    <image-wnd id="61650" pos="|-200, |-70, |200, |70" hv-warpmode="clamp" hv-align="center"/>
+  </div>
+
+  <button id="61677" pos="18,390,=110,=27" skin="common_button_bg" text="@lyric_setting_return_default" text-skin="default_button"/>
+
+</div>

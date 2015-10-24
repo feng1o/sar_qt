@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dialog pos="|99, 0, =200, =35" app="0" double-layer="1" movable="1" visible="0" resize="1" min-width="200" min-height="35" snap="2" frame-skin="common_dialog_frame" skin-pos="1,1,-1,-1" skin="main_bg" managed-skin="1" managed-enable="1" system-menu="1" round="2">
+  <div id="61334" pos="0, 0, -0, -0" visible="0" opaque-cover="1"/>
+  <div pos="1, 1, -1, -1">
+
+    <!--窗口歌词背景半透明罩取色使用，不可见-->
+    <div id="61333" pos="0, 0, 0, 0" visible="0" skin="common_window_content_cover"/>    
+
+    <!--歌词区域-->
+    <div id="61328" pos="0, 0, -0, -0" skin="common_dialog_content_bg">
+      <div pos="0, 0, -0, -0" skin="common_window_content_cover">
+        <div pos="5, 5, -5, -5">
+          <realctrl id="61305" pos="0, 0, -0, -0" visible="1"/>
+          <div id="61324" pos="0, 0, -0, -0" visible="0" opaque-cover="1"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</dialog>

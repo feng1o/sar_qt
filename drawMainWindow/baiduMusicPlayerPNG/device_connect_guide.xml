@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dialog text="@device_connect_guide_title" pos="|-246, |-237,=512,=495" app="0" double-layer="1" movable="1" visible="0" skin-pos="1,1,-1,-1" skin="main_shadow" managed-skin="0" managed-enable="0" round="2" parent-rect-limit="1">
+
+  <div pos="30,30,-30,-30" skin="common_white_color">
+    <div pos="0, 0, -0,=40" skin="device_connect_title_bg">
+      <static  pos="20, 0, =100, -0" text-skin="default_title" text="@device_connect_guide_title"/>
+      <button id="211001" skin="btn_login_close" pos="-32,0,=32,=35" tip="@close" mouse-enter-animate="common_mouse_enter_gradient"/>
+    </div>
+    
+    <div-v pos="20,60,-0,-20" show-all-child="1">
+      <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+        <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+          <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+        </div>
+      </scroll>
+      
+      <div pos="0,,-0,=175">
+        <static pos="0,0,=14,=14" skin="device_connect_guide_step_1"/>
+        <static pos="26,0,-20,=20" text-skin="default_multi_line" text="@device_connect_guide_step1"/>
+
+        <div pos="0, 30, -20, =125">
+          <button id="211002" pos="0, 0, =89, =92" skin="device_connect_guide_down_android"/>
+          <static  pos="0, 107, =95, =20" text-skin="default_center" text="@device_connect_guide_down_android"/>
+          
+          <button id="211003" pos="115, 0, =89, =92" skin="device_connect_guide_down_ios"/>
+          <static  pos="115, 107, =90, =20" text-skin="default_center" text="@device_connect_guide_down_ios"/>
+          
+          <static pos="230, 0, =89, =92" skin="device_connect_guide_dcode"/>
+          <static  pos="230, 107, =95, =20" text-skin="default_center" text="@device_connect_guide_down_2d"/>
+        </div>  
+      </div>
+
+      <div pos="0,,-0,=34">
+        <static pos="0,0,=14,=14" skin="device_connect_guide_step_2"/>
+        <static pos="26,0,-20,=20" text-skin="default_multi_line" text="@device_connect_guide_step2"/>
+      </div>
+
+      <div pos="0,,-0,=430">
+        <static pos="0,0,=14,=14" skin="device_connect_guide_step_3"/>
+        <static pos="26,0,-20,=40" text-skin="default_multi_line" text="@device_connect_guide_step3"/>
+        <tabctrl id="211004" pos="0, 52, -0, -0" active-item="0">
+          <tab-button-body pos="0, 0, -0, =30">
+            <button pos="1,0,=93,=30" skin="device_connect_guide_tab" text-skin="default_center" text="@device_connect_guide_android_tab" ></button>
+            <button pos="94,0,=93,=30" skin="device_connect_guide_tab" text-skin="default_center" text="@device_connect_guide_ios_tab"></button>
+          </tab-button-body>
+
+          <tab-page-body pos="0, 30, -0, -0">
+            <div pos="8,8,-8,-8">
+              <static pos="0, 0, =392, =330" skin="device_connect_guide_android_step"/>
+            </div>
+
+            <div pos="8,8,-8,-8">
+              <static pos="0, 0, =392, =330" skin="device_connect_guide_ios_step"/>
+            </div>
+
+          </tab-page-body>
+        </tabctrl>
+
+        <div pos="0, 80,-24,-0">
+          <static pos="0,1,-0,=1" skin="device_connect_guide_list_frame"/>
+          <static pos="1,0,=1,-0" skin="device_connect_guide_list_frame"/>
+          <static pos="0,-1,-0,=1" skin="device_connect_guide_list_frame"/>
+          <static pos="-1,0,=1,-0" skin="device_connect_guide_list_frame"/>
+        </div>
+        
+      </div>
+    </div-v>
+  </div>
+
+</dialog>

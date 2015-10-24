@@ -1,0 +1,7 @@
+#ignore file
+
+drawMainWindow/Debug
+x64
+Win32
+drawMainWindow/*.vc*
+

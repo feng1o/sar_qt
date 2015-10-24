@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<div skin="setting_page_bk" pos="0, 0, -0, -0">
+  
+  <static pos="18,22,122,=20" text="@play" text-skin="content_title" adapt-text="1"/>
+  <div pos="0, 0, -0, -0">
+    <checkbox id="31301" pos="32,50,|80,=20" text-pos="20,0,-0,-0" text-skin="default_gray" skin="common_checkbox" text="@playback_setting_auto_play_when_launch"></checkbox>
+    <checkbox id="31302" pos="32,80,|-105,=20" text-pos="20,0,-0,-0" text-skin="default_gray" skin="common_checkbox" text="@playback_setting_default_player"></checkbox>
+    <static pos="|-95,82,|35,=20" text="@playback_setting_default_win8_prompt" text-skin="default_gray" adapt-text="1"/>
+    <button id="31303" pos="|35,78,=60,=24" text-skin="default_link_button" text="@playback_setting_default_win8"/>
+  </div>
+
+  <static pos="18,114,122,=20" text="@playback_setting_replay_gain_topic" text-skin="content_title" adapt-text="1"/>
+  <div pos="0, 0, -0, -0">
+    <checkbox id="31304" pos="32,142,=360,=20" text-pos="20,0,-0,-0" text-skin="default_gray" skin="common_checkbox" text="@playback_setting_enable_replay_gain"></checkbox>
+    <checkbox id="31305" pos="32,172,=360,=20" text-pos="20,0,-0,-0" text-skin="default_gray" skin="common_checkbox" text="@playback_setting_auto_scan_replay_gain"></checkbox>
+  </div>
+
+  <static pos="18,206,122,=20" text="@playback_setting_effect_topic" text-skin="content_title" adapt-text="1"/>
+  <div pos="0, 0, -0, -0">
+    <checkbox id="31306" pos="32,234,=360,=20" text-pos="20,0,-0,-0" text-skin="default_gray" skin="common_checkbox" text="@playback_setting_auto_replay_gain_control"></checkbox>
+  </div>
+
+</div>

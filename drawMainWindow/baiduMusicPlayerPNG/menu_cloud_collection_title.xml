@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<dialog pos="0,0,=182,=48" app="0" movable="0" double-layer="1" snap="0" visible="0" skin="menu_shadow">
+  <div pos="7,7,-7,-7" skin="common_listctrl_header_color">
+    <button id="121024" pos="0,0,-0,=34" text-pos="22,0,-0,-0" skin="menu_listctrl_row_color" text="@song_list_refresh" text-skin="song_list_content"/>
+  </div>
+</dialog>

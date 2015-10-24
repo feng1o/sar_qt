@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dialog text="@volum_slider_wnd_title" skin="common_window_title_cover_1" pos="|-100, |-25,=44,=165" app="0" double-layer="1" movable="0" visible="0" managed-skin="0" managed-enable="0" round="2">
+  <div id="11203" pos="0,0,=44,=165" handle-mouse="ff">
+    <slider id="11202" pos="|-12,10,=25,=120" min="0" max="100" value="0" orient="vert" tip-type="value" skin="volume_slider_bg_color" visible="1" handle-mouse-wheel="1">
+      <button pos="|-7,-14,=14,=14" mark="thumb" skin="volume_slider_thumb_mini" />
+      <wnd pos="|-1,8,=2,-9" mark="value" skin="volume_slider_value"/>
+      <wnd pos="|-1,8,=2,-9" mark="back" skin="volum_slider_value_color"/>
+    </slider>
+  </div>
+</dialog>

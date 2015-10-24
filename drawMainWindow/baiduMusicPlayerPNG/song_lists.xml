@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<div id="12001" pos="0,0,-0,-0" skin="name_list_bg" handle-mouse="ff">
+  <div pos="0,0,=174,-0" skin="song_list_content_bg">
+  <div-v id="13009" pos="0,0,=174,-0" handle-mouse="ff" auto-hide-thumb="1" always-handle-mouse-move="1">
+      <scroll pos="-10, 0, =10, -0" max="100" orient="vert" scroll-step="0.1" min-thumb-len="60">
+        <div pos="0,0,-0,-0" mark="thumb" skin="common_scroll_thumb_mask" above-child="1">
+          <static pos="0,0,-0,-0" skin="common_scroll_color"/>
+        </div>
+      </scroll>
+      
+    <div pos="0,0,-0,=7" handle-mouse="ff"/>
+    <!--我的音乐-->
+    <div id="13007" pos="25,13,-0,=35" text="@my_music" text-skin="name_list_header" handle-mouse="ff"/>
+
+    <listctrl id="13001" pos="0,0,-0,=120"  adapt-child-height="1">
+      <div id="13105" pos="31,0,=14,=14" visible="0">
+        <animate-wnd pos="|-7,|-2,=14,=8" animate="playing_list_animate" auto="1" skin="playing_list_animate" visible="1"/>
+        <static pos="|-7,|-2,=14,=8"  skin="playing_list_animate" visible="0"/>
+      </div>
+      
+      <div id="13104" pos="31,0,=14,=14" visible="0">
+        <animate-wnd pos="|-7,|-2,=14,=8" animate="playing_song_animate" auto="1" skin="playing_song_animate" visible="1"/>
+        <static pos="|-7,|-2,=14,=8"  skin="playing_song_animate" visible="0"/>
+      </div>
+      
+      <rowbody pos="0,0,-0,-0" multi-select="0" always-select="1" drag="0" drop-inner="0" drop-file="0" quick-drag="1" movable="0" adapt-child-height="1">
+
+        <static mark="drop" pos="0,0,-0,=2" skin="drop_line_bg" visible="0"/>
+
+        <row mark="template" pos="0,0,-0,=40" cursor="hand" skin="song_list_content_bg">
+          <list-item pos="0,0,-0,-0" >
+            <imagelist id="1" pos="31,|-11,=22,=22" skin="list_type_icon"/>
+            <imagelist id="6" pos="31,|-11,=22,=22" skin="list_type_icon_select" visible="0"/>
+            <static id="2" pos="31,0,-0,-0" text-pos="25,0,-0,-0"  text-skin="name_list_content" handle-mouse-hover="1" tip-type="text"/>
+            <static id="3" pos="0,6,-0,-6" skin="playing_song_item_mask"/>
+          </list-item>
+        </row>
+      </rowbody>
+    </listctrl>
+
+    <!--云歌单-->
+    <div id="13020" pos="25,0,-0,=35" text="@cloud_music" text-skin="name_list_header" handle-mouse="ff">
+      <button id="13024" pos="-50,|-12,=44,=29" skin="add_new_list_btn" tip="@add_cloud_list_title"/>
+    </div>
+
+    <listctrl id="13022" pos="0,0,-0,=120"  adapt-child-height="1">
+      <edit pos="56,9,-20,=22" visible="0" text-skin="default" max-text-count="100"/>
+
+      <div mark="edit-back" pos="56,9,-20,=22" skin="common_white_color" visible="0">
+        <static pos="11,|-7,=14,=14" skin="list_editing_flag"/>
+      </div>
+
+      <div id="13105" pos="31,,=14,=14" visible="0">
+        <animate-wnd pos="|-7,|-2,=14,=8" animate="playing_list_animate" auto="1" skin="playing_list_animate" visible="1"/>
+        <static pos="|-7,|-2,=14,=8"  skin="playing_list_animate" visible="0"/>
+      </div>
+
+      <div id="13104" pos="31,,=14,=14" visible="0">
+        <animate-wnd pos="|-7,|-2,=14,=8" animate="playing_song_animate" auto="1" skin="playing_song_animate" visible="1"/>
+        <static pos="|-7,|-2,=14,=8"  skin="playing_song_animate" visible="0"/>
+      </div>
+
+      <rowbody pos="0,0,-0,-0" multi-select="0" always-select="1" drag="0" drop-inner="0" drop-file="0" quick-drag="1" movable="0" adapt-child-height="1">
+
+        <static mark="drop" pos="31,0,-0,=2" skin="drop_line_bg" visible="0"/>
+
+        <row mark="template" pos="0,0,-0,=40" cursor="hand" skin="song_list_content_bg">
+          <list-item pos="0,0,-0,-0" >
+            <imagelist id="1" pos="31,|-11,=22,=22" skin="list_type_icon"/>
+            <imagelist id="6" pos="31,|-11,=22,=22" skin="list_type_icon_select" visible="0"/>
+            <static id="2" pos="31,9,-0,-9" text-pos="25,0,-0,-0"  text-skin="name_list_content" handle-mouse-hover="1" tip-type="text"/>
+            <static id="3" pos="0,6,-0,-6" skin="playing_song_item_mask"/>
+            <animate-wnd id="4" pos="-18,|-9,=18,=18" animate="common_upload_animate" auto="1"/>
+            <animate-wnd id="5" pos="-18,|-9,=18,=18" animate="common_upload_animate_playing" auto="1"/>
+          </list-item>
+        </row>
+      </rowbody>
+    </listctrl>
+
+    <!--本地歌单-->
+    <div id="13021" pos="25,0,-0,=35" text="@local_music" text-skin="name_list_header" handle-mouse="ff">
+      <button id="13025" pos="-50,|-12,=44,=29" skin="add_new_list_btn" tip="@add_local_list_title"/>
+    </div>
+
+    <listctrl id="13023" pos="0,0,-0,=120"  adapt-child-height="1">
+      <edit pos="56,9,-20,=22" visible="0" text-skin="default" max-text-count="100"/>
+
+      <div mark="edit-back" pos="56,9,-20,=22" skin="common_white_color" visible="0">
+        <static pos="11,|-7,=14,=14" skin="list_editing_flag"/>
+      </div>
+
+      <div id="13105" pos="31,,=14,=14" visible="0">
+        <animate-wnd pos="|-7,|-2,=14,=8" animate="playing_list_animate" auto="1" skin="playing_list_animate" visible="1"/>
+        <static pos="|-7,|-2,=14,=8"  skin="playing_list_animate" visible="0"/>
+      </div>
+
+      <div id="13104" pos="31,,=14,=14" visible="0">
+        <animate-wnd pos="|-7,|-2,=14,=8" animate="playing_song_animate" auto="1" skin="playing_song_animate" visible="1"/>
+        <static pos="|-7,|-2,=14,=8"  skin="playing_song_animate" visible="0"/>
+      </div>
+
+      <rowbody pos="0,0,-0,-0" multi-select="0" always-select="1" drag="1" drop-inner="2" drop-file="1" quick-drag="1" adapt-child-height="1">
+
+        <static mark="drop" pos="0,0,-0,=2" skin="drop_line_bg" visible="0"/>
+
+        <row mark="template" pos="0,0,-0,=40" cursor="hand" skin="song_list_content_bg">
+          <list-item pos="0,0,-0,-0" >
+            <imagelist id="1" pos="31,|-11,=22,=22" skin="list_type_icon"/>
+            <imagelist id="6" pos="31,|-11,=22,=22" skin="list_type_icon_select" visible="0"/>
+            <static id="2" pos="31,9,-0,-9" text-pos="25,0,-0,-0"  text-skin="name_list_content" handle-mouse-hover="1" tip-type="text"/>
+            <static id="3" pos="0,6,-0,-6" skin="playing_song_item_mask"/>
+          </list-item>
+        </row>
+      </rowbody>
+    </listctrl>
+    
+  </div-v>
+  </div>
+  
+  <!--提示信息-->
+  <div-h id="12050" pos="1, |-22, -1, |21" skin="song_list_prompt_tips_bg" visible="0">
+    <static id="12051" pos="0, 0, =20, -0"/>
+    <div id="12052" pos="0, |-13, =26, |13">
+      <div id="12053" pos="0, 0, -0, -0"/>
+      <div id="12054" pos="0, 0, -0, -0" skin="song_list_prompt_tips_success" visible="0"/>
+      <div id="12055" pos="0, 0, -0, -0" skin="song_list_prompt_tips_error" visible="0"/>
+    </div>
+    <static id="12056" pos="0, 0, =10, -0"/>
+    <static id="12057" pos="0, 0, 0, -0" text-skin="song_list_prompt_center" adapt-text="1" adapt-text-vdock="center"/>
+    <static id="12058" pos="0, 0, =20, -0"/>
+  </div-h>
+
+  <div id="13010" pos="175,0,-0,-0">
+    
+    <tabctrl id="13006" pos="0,0,-0,=74">
+      <tab-page-body pos="0,0,-0,-0" skin="common_listctrl_header_color">
+        <!--试听列表、本地列表-->
+        <div pos="0,0,-0,-0">
+          <div pos="0,0,-0,-26">
+            <div pos="5,0,-290,-0">
+              <static id="13026" pos="10, |-10, =350, =20" text-skin="song_list_title_gray"/>
+              <static id="13028" pos="10, |-10, =350, =20" text-skin="song_list_title_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left" visible="0"/>
+              <static id="13019" pos="90, |-10, =50, =20" text-skin="default_gray"/>
+              <static id="13027" pos="90, |-10, =50, =20" text-skin="default_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left" visible="0"/>
+            </div>
+            <button id="13018" pos="-280,|-16,=94,=36" skin="play_all" tip="@play_all"/>
+            <button id="13004" pos="-185,|-16,=94,=36" skin="add_local_song"  tip="@add_song_tip" />
+            <button id="13005" pos="-90,|-18,=71,=36" skin="sort" tip="@sort_tip"/>
+          </div>
+          <div pos="0, -27, -0, -0"  skin="list_title_frame">
+            <static pos="0,1,315,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_title"/>
+            <static pos="316,1,=204,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_artist"/>
+            <static pos="521,1,=204,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_album"/>
+            <static pos="726,1,-0,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_time"/>
+          </div>
+        </div>
+
+        <!--下载列表-->
+        <div pos="0,0,-0,-0">
+          <div pos="0, 0, -0, -26">
+            <div pos="5,0,-425,-0">
+              <static id="13026" pos="10, |-10, =350, =20" text-skin="song_list_title_gray"/>
+              <static id="13028" pos="10, |-10, =350, =20" text-skin="song_list_title_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left"  visible="0"/>
+              <static id="13019" pos="90, |-10, =50, =20" text-skin="default_gray"/>
+              <static id="13027" pos="90, |-10, =50, =20" text-skin="default_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left" visible="0"/>
+            </div>
+            <button id="171005" pos="-415,|-16,=94,=36" skin="play_all" tip="@play_all"/>
+            <button id="171002" pos="-315,|-16,=94,=36" skin="btn_start_all_download" tip="@download_start_all"/>
+            <button id="171003" pos="-215,|-16,=94,=36" skin="btn_pause_all_download" tip="@download_stop_all"/>
+            <button id="171004" pos="-115,|-16,=94,=36" skin="btn_download_setting" tip="@download_setting"/>
+          </div>
+          <div pos="0,-27,-0,-0" skin="list_title_frame">
+            <static pos="0,1,265,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_title" />
+            <static pos="266,1,=188,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_artist" />
+            <static pos="455,1,=210,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_album" />
+            <static pos="666,1,=87,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_size" />
+            <static pos="754,1,-0,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_time" />
+          </div>
+        </div>
+
+        <!--云歌单-->
+        <div pos="0,0,-0,-0">
+          <div pos="0,0,-0,-26">
+            <div pos="5,0,-320,-0">
+              <static id="13026" pos="10, |-10, =350, =20" text-skin="song_list_title_gray"/>
+              <static id="13028" pos="10, |-10, =350, =20" text-skin="song_list_title_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left" visible="0"/>
+              <static id="13019" pos="90, |-10, =50, =20" text-skin="default_gray"/>
+              <static id="13027" pos="90, |-10, =50, =20" text-skin="default_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left" visible="0"/>
+            </div>
+            <button id="121003" pos="-315,|-16,=94,=36" skin="play_all" tip="@play_all"/>
+            <button id="121004" pos="-215,|-16,=94,=36" skin="btn_download_all" tip="@download_all"/>
+            <button id="121005" pos="-115,|-16,=94,=36" skin="btn_send_all" tip="@send_all_to_device"/>
+          </div>
+          <div pos="0, -27, -0, -0"  skin="list_title_frame">
+            <static pos="0,1,315,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_title"/>
+            <static pos="316,1,=204,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_artist"/>
+            <static pos="521,1,=204,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_album"/>
+            <static pos="726,1,-0,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_time"/>
+          </div>
+        </div>
+
+        <!--本地歌单-->
+        <div pos="0,0,-0,-0">
+          <div pos="0,0,-0,-26">
+            <div pos="5,0,-400,-0">
+              <static id="13026" pos="10, |-10, =350, =20" text-skin="song_list_title_gray"/>
+              <static id="13028" pos="10, |-10, =350, =20" text-skin="song_list_title_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left" visible="0"/>
+              <static id="13019" pos="90, |-10, =50, =20" text-skin="default_gray"/>
+              <static id="13027" pos="90, |-10, =50, =20" text-skin="default_gray" adapt-text="1" adapt-text-vdock="center" adapt-text-hdock="left" visible="0"/>
+            </div>
+            <button id="121007" pos="-390,|-16,=94,=36" skin="play_all" tip="@play_all"/>
+            <button id="121008" pos="-290,|-16,=94,=36" skin="add_local_song"  tip="@add_song_tip" />
+            <button id="121009" pos="-190,|-18,=71,=36" skin="sort" tip="@sort_tip"/>
+            <button id="121010" pos="-115,|-16,=94,=36" skin="btn_send_all" tip="@send_all_to_device"/>
+          </div>
+          <div pos="0, -27, -0, -0"  skin="list_title_frame">
+            <static pos="0,1,315,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_title"/>
+            <static pos="316,1,=204,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_artist"/>
+            <static pos="521,1,=204,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_album"/>
+            <static pos="726,1,-0,-1" skin="common_white_color" text-pos="15,|-9,=35,|9" text-skin="default" text="@song_time"/>
+          </div>
+        </div>
+      </tab-page-body>
+    </tabctrl>
+    
+
+    <tabctrl id="13030" pos="0,74,-0,-0">
+      <static id="10018" pos="|-90,55,=180,=125" skin="high_quality_tip" visible="0"/>
+      <tab-page-body pos="0,0,-0,-0" skin="song_list_content_bg">
+        <file id="12010" src="song_list_content.xml" pos="0, 0, -0, -0" />
+        <file src="downloading_list.xml" pos="0,0,-0,-0"/>
+        <div pos="0,0,-0,-0">
+          <static pos="|-49,|-98,|49,|0" skin="empty_cloud"/>
+          <static pos="0,|5,-0,|35" text="@blank_not_login" text-skin="blank_prompt"></static>
+          <button id="13042" pos="|-35,|40,=69,=28" skin="login_btn" tip="@login"/>
+        </div>
+        <file src="radio_list.xml" pos="0,0,-0,-0"/>
+      </tab-page-body>
+    </tabctrl>
+  </div>
+
+
+</div>
